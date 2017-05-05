@@ -21,7 +21,7 @@ while True:
   if (GPIO.input(SWITCH)):
     snap = 0
     while snap < 4:
-      print("pose!")
+      print("{} pose!".format(snap))
       GPIO.output(BUTTON_LED, False)
       GPIO.output(POSE_LED, True)
       time.sleep(1.5)
